@@ -106,13 +106,13 @@ DATABASES = {
     },
 }
 
-REDIS_URL = 'redis://default:BMkhFaiH65F21kAIfooMnEKKkEngnJfK@viaduct.proxy.rlwy.net:22860'
+REDIS_URL = 'GET URL'
 
 CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "channels_redis.core.RedisChannelLayer",
         "CONFIG": {
-            "hosts": [os.environ.get('REDIS_URL', 'redis://default:BMkhFaiH65F21kAIfooMnEKKkEngnJfK@viaduct.proxy.rlwy.net:22860')],
+            "hosts": [os.environ.get('REDIS_URL')],
         },
     },
 }
